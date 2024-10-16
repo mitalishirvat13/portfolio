@@ -1,0 +1,120 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #824b45, #685e4a);
+    color: #fff;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+header h1:hover {
+    transform: rotate(-5deg);
+    transition: transform 0.2s ease;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+nav a:hover::after {
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    background: url('background-pattern.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.info {
+    flex: 1;
+    padding: 40px;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards ease-out 0.3s;
+}
+.info h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ffdd57;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.info p {
+    font-size: 30px;
+    line-height: 1.8;
+    color: #eee;
+}
+.info .social-links {
+    margin-top: 20px;
+}
+.info .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}
+.info .social-links a:hover {
+    color: #ffdd57;
+}
+.photo {
+    flex: 1;
+    max-width: 400px;
+    transform: translateX(100%);
+    animation: slideIn 1s forwards ease-out 0.6s;
+}
+.photo img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+.photo img:hover {
+    transform: scale(1);
+}
+
+@keyframes slideIn {
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes glow {
+    100% {
+        text-shadow: 0 0 20px #ffdd57, 0 0 30px #ffdd57, 0 0 40px #ffdd57, 0 0 50px #ffdd57;
+    }
+}

@@ -1,0 +1,60 @@
+
+ body {
+    background: linear-gradient(to right,#824b45, #685e4a);
+    color: #f9efef;
+    font-size: 25px; 
+    margin: 0; 
+}
+h1{
+    color: #edc319;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    justify-content: end;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+    width: 98%;  
+    z-index: 1000;
+}
+
+nav a {
+    color: #f9efef;
+    text-decoration: none;
+    margin: 0 25px; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact-info h1 {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.name, .email, .phone {
+    display: flex;
+    justify-content: center;
+}
+
+.Address, .social-links {
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 20px; 
+    max-width: 600px; 
+}
+
+.social-links a {
+    word-spacing: 1.2em; 
+}
+
+.email a, .phone a {
+    color: #f9efef;
+    text-decoration: none;
+}
+/* .highlight{
+    color: black;
+} */
+

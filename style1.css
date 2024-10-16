@@ -1,0 +1,88 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#824b45, #685e4a);
+    color: #fff;
+    overflow-x: hidden;
+}
+.about-container h2{
+   margin-bottom: 30px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+    width: 100%; 
+    z-index: 1000;
+}
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+nav a {
+    color: #f9efef;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+   
+} 
+nav a::after {
+    /* content: ''; */
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #b78a8a;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    justify-content: flex-end;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+.about-container {
+    padding: 100px 20px 20px;
+    text-align: center;
+}
+.about-container h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #edc319;
+}
+.about-container p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #eee;
+    margin-bottom: 30px;
+}
+.skills, .journey, .hobbies {
+    margin-bottom: 40px;
+}
+.skills h3, .journey h3, .hobbies h3 {
+    font-size: 30px;
+    color: #ffdd57;
+    margin-bottom: 15px;
+}
+.skills ul, .journey ul, .hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li, .journey li, .hobbies li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #eee;
+}
